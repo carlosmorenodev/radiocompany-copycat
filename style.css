@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+
+    overflow: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.close-menu {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#closeMenuButton {
+    font-size: 1.9rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-logo {
+    text-align: center;
+}
+
+.header-logo img {
+    width: 70%;
+}
+
+.header-nav {
+    width: 70%;
+    margin: auto;
+}
+
+.header-nav li {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.header-nav a {
+
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+.header-nav a:hover {
+    border-bottom: solid 2px #1ebf90;
+}
+
+.header-search {
+    text-align: center;
+}
+
+.header-search input {
+    border: solid 2px #1ebf90;
+    background-color: transparent;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.log-in {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.log-in li {
+    list-style: none;
+}
+
+.log-in a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.header-social {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.header-social i {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+/* Top bar */
+
+.top-bar {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    height: 30px;
+}
+
+.top-bar p {
+    line-height: 30px;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/hero-img.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-logo {
+    width: 800px;
+}
+
+/* Fixed nav */
+
+.fixed-nav {
+    padding: 10px 30px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-nav i {
+    color: #ccc;
+    font-size: 1.8rem;
+    padding: 7px;
+    cursor: pointer;
+
+}
+
+.social-nav i:hover {
+    color: #1ebf90;
+}
+
+#openMenu {
+    color: #ccc;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Band Merch */
+
+.band-merch {
+    
+    padding: 30px;
+    text-align: center;
+}
+
+.band-merch-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.band-merch-container {
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 400px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-description {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-price {
+    text-align: center;
+    color: #1ebf90
+}
+
+.view-all {
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 20px;;
+    border: 2px solid #1ebf90;
+    background-color: transparent;
+    color: #1ebf90;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.view-all:hover {
+    border: solid 2px #111;
+    color: #111
+}
+
+/* Bio */
+
+.bio {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+    color: #ccc;
+}
+
+.bio-title {
+    margin-bottom: 10px;
+}
+
+.bio-container {
+    width: 60%;
+    margin: auto;
+}
+
+.bio-container p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Instagram */
+.instagram {
+    width: 100%;
+    
+    padding: 20px;
+}
+
+.instagram-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;  
+    flex-wrap:wrap;  
+}
+
+.instagram-card {
+    width: 300px; 
+    height: 300px;   
+}
+
+.instagram-card img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Contact */
+
+.contact {
+    padding: 30px;
+}
+.contact h2 {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact a {
+    color: black;
+}
+
+.contact a:hover {
+    color: #1ebf90;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.footer h2 {
+    margin-bottom: 5px;
+}
+
+.footer-navigation {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.footer-navigation a:hover {
+    color: #1ebf90;
+}
+
+.footer-newsletter {
+    grid-column:7/10;
+    
+}
+
+.footer-newsletter input[type=email] {
+    border: solid 2px #1ebf90;
+    padding: 5px 20px;
+    /* width: 70%; */
+}
+
+.footer-newsletter input[type=submit] {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.footer-social {
+    grid-column: 11/13;
+}
+
+.footer-social i {
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer-social i:hover {
+    color: #1ebf90;
+}
+
+.footer-copyright {
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-img-logo {
+        width: 70%;
+    }
+
+    .instagram-container {
+        gap: 10px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;        
+    }
+
+    .footer-navigation{
+        text-align: center;
+    }
+
+    .footer-newsletter {
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-newsletter input[type=email] {
+        margin-bottom: 10px;
+    }
+}
